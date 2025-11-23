@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaka Tree Care - Bellingham's Local Arborists</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Configure Tailwind --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Pacifico', 'cursive'], // For titles and a bit more character
+                    },
+                    colors: {
+                        'brand-green': '#4a7c59', // A medium, natural green
+                        'brand-dark-green': '#2f4d37', // A darker forest green
+                        'brand-brown': '#6b4f44', // A warm brown
+                        'brand-tan': '#f5f1ed', // A light tan/beige
+                        'brand-gold': '#d4af37', // A touch of gold for accent
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to bottom, rgba(47, 77, 55, 0.8), rgba(47, 77, 55, 0.8)), url('https://placehold.co/1920x1080/4a7c59/2f4d37?text=Forest+Background')",
+                        'texture-pattern': "url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png')",
+                    }
+                },
+            },
+        };
+    </script>
+    <style>
+        /* Simple smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom hero overlay for depth */
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(47, 77, 55, 0.85); /* Dark green overlay */
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="font-sans bg-brand-tan text-gray-800">
+
+    <!-- Header & Navigation --><nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo and Company Name --><a href="#" class="flex-shrink-0 flex items-center gap-3">
+                    <img class="h-14 w-14 rounded-full" 
+                         src="<image-tokens-bardstorage://RESPONSE_DATA:9a64244aa3de18d0000643bc7db29c1b00414ca20b15aff3:164109935165229798979c80b2f1f1e4e37e:0:>" 
+                         alt="Shaka Tree Care Logo"
+                         onerror="this.src='https://placehold.co/56x56/4a7c59/white?text=STC'">
+                    <span class="text-3xl font-display text-brand-dark-green tracking-wide">Shaka Tree Care</span>
+                </a>
+                
+                <!-- Desktop Navigation --><div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-brand-green font-semibold">About Us</a>
+                    <a href="#services" class="text-gray-600 hover:text-brand-green font-semibold">Services</a>
+                    <a href="#contact" class="inline-flex items-center px-5 py-2 border border-transparent text-base font-semibold rounded-full text-white bg-brand-green hover:bg-brand-dark-green transition duration-300 shadow-lg">
+                        Get a Free Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Simple: just scrolls to contact) --><div class="md:hidden">
+                    <a href="#contact" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-semibold rounded-full text-white bg-brand-green hover:bg-brand-dark-green transition duration-300 shadow-md">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section --><header class="bg-hero-pattern bg-cover bg-center relative overflow-hidden text-white py-20 md:py-32 hero-overlay">
+        <div class="absolute inset-0 z-0 opacity-10 bg-texture-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content --><div class="text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-display tracking-tight leading-tight">
+                        Aloha, Bellingham! Your Trees Deserve the Best.
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-gray-200">
+                        From expert pruning to safe removals, Kaikalani Oxendine brings professional care and a genuine passion for trees to your property.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
+                        <a href="#contact" class="w-full sm:w-auto inline-block text-center px-10 py-4 border-2 border-brand-gold text-lg font-bold rounded-full text-brand-dark-green bg-brand-gold hover:bg-yellow-400 transition duration-300 shadow-xl">
+                            Get a Free Quote!
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto inline-block text-center px-10 py-4 border-2 border-white text-lg font-bold rounded-full text-white hover:bg-white hover:text-brand-dark-green transition duration-300 shadow-xl">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Logo --><div class="flex justify-center mt-10 md:mt-0">
+                    <img class="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-brand-gold shadow-2xl animate-pulse-slow" 
+                         src="<image-tokens-bardstorage://RESPONSE_DATA:9a64244aa3de18d0000643bc7db29c1b00414ca20b15aff3:164109935165229798979c80b2f1f1e4e37e:0:>" 
+                         alt="Shaka Tree Care Logo"
+                         onerror="this.src='https://placehold.co/384x384/f5f1ed/4a7c59?text=Shaka+Tree+Care'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section --><section id="about" class="py-16 md:py-24 bg-brand-tan">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-sm font-semibold text-brand-green uppercase tracking-wide">About Us</h2>
+                        <h3 class="mt-2 text-4xl md:text-5xl font-display text-gray-900 leading-tight">
+                            Meet Kaikalani: Bellingham's Tree Whisperer
+                        </h3>
+                        <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                            Aloha! I'm Kaikalani Oxendine, the proud owner of Shaka Tree Care. My journey with trees began with a deep appreciation for their beauty and ecological importance. It's more than just a job; it's a commitment to the health of our urban canopy and the safety of our community.
+                        </p>
+                        <ul class="mt-8 space-y-5">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-8 w-8 text-brand-green" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-4 text-base text-gray-700">
+                                    <strong>2 Years as a Hotshot Firefighter:</strong> My time on a Hotshot crew instilled an unparalleled discipline for safety, efficient rigging, and working effectively in challenging, high-risk tree environments. This experience is invaluable in complex tree removals and emergency situations.
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-8 w-8 text-brand-green" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <p class="ml-4 text-base text-gray-700">
+                                    <strong>3 Years as a Bellingham Arborist:</strong> For the past three years, I've been hands-on with Bellingham's unique tree population, from towering cedars to delicate fruit trees. I understand the specific needs and challenges of our local flora.
+                                </p>
+                            </li>
+                        </ul>
+                        <p class="mt-8 text-lg text-gray-700 leading-relaxed">
+                            At Shaka Tree Care, we combine this extensive experience with a friendly, professional approach. We're not just cutting branches; we're caring for your landscape and ensuring the longevity of your trees. "Shaka" isn't just a hand gesture; it's a philosophy of goodwill, understanding, and community that we bring to every job.
+                        </p>
+                    </div>
+                    <div class="order-1 md:order-2 flex justify-center">
+                        <img class="rounded-xl shadow-2xl border-4 border-brand-brown transform rotate-3 hover:rotate-0 transition-transform duration-500 w-full max-w-md aspect-square object-cover" 
+                             src="https://placehold.co/600x600/6b4f44/f5f1ed?text=Kaikalani+Oxendine" 
+                             alt="Kaikalani Oxendine, owner of Shaka Tree Care">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section --><section id="services" class="py-16 md:py-24 bg-white bg-texture-pattern">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-sm font-semibold text-brand-green uppercase tracking-wide">Our Expertise</h2>
+                    <h3 class="mt-2 text-4xl md:text-5xl font-display text-gray-900 leading-tight">
+                        Rooted in Quality, Growing with Care
+                    </h3>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-700">
+                        From delicate trimming to complex removals, our services are designed to keep your trees healthy, beautiful, and safe, always with a personal touch.
+                    </p>
+                </div>
+
+                <div class="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service Item 1 --><div class="bg-brand-tan rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl border-2 border-brand-green">
+                        <img class="h-60 w-full object-cover" 
+                             src="https://placehold.co/600x400/4a7c59/f5f1ed?text=Expert+Pruning" 
+                             alt="Tree pruning with care">
+                        <div class="p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-3">Precision Tree Pruning</h4>
+                            <p class="text-base text-gray-700">
+                                Artful and scientific pruning to enhance tree health, structure, and aesthetics. We focus on proper cuts to promote vigorous growth and remove hazardous limbs.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item 2 --><div class="bg-brand-tan rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl border-2 border-brand-green">
+                        <img class="h-60 w-full object-cover" 
+                             src="https://placehold.co/600x400/6b4f44/f5f1ed?text=Safe+Tree+Removal" 
+                             alt="Safe tree removal">
+                        <div class="p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-3">Safe & Efficient Tree Removal</h4>
+                            <p class="text-base text-gray-700">
+                                Utilizing advanced rigging and a firefighter's precision, we safely remove trees in challenging spaces, minimizing impact on your property.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Item 3 --><div class="bg-brand-tan rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl border-2 border-brand-green">
+                        <img class="h-60 w-full object-cover" 
+                             src="https://placehold.co/600x400/2f4d37/f5f1ed?text=Health+Assessment" 
+                             alt="Tree health assessment">
+                        <div class="p-8">
+                            <h4 class="text-2xl font-bold text-gray-900 mb-3">Tree Health & Risk Assessment</h4>
+                            <p class="text-base text-gray-700">
+                                Proactive evaluations to diagnose tree diseases, pests, and structural weaknesses, ensuring the long-term vitality and safety of your landscape.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Testimonial (optional, but adds flavor) --><section class="bg-brand-green py-16 md:py-20 text-white text-center">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <blockquote class="text-2xl md:text-3xl italic leading-relaxed font-semibold">
+                    "Kaikalani's knowledge and skill are exceptional. He transformed my overgrown yard and made it safe for my kids. Plus, he's just a great guy to work with!"
+                </blockquote>
+                <cite class="block mt-6 text-xl font-medium text-brand-gold">
+                    — A Happy Bellingham Client
+                </cite>
+                <div class="mt-10">
+                    <a href="#contact" class="inline-flex items-center px-10 py-4 border-2 border-brand-gold text-lg font-bold rounded-full text-brand-dark-green bg-brand-gold hover:bg-yellow-400 transition duration-300 shadow-xl">
+                        Ready for Your Free Estimate?
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section --><section id="contact" class="py-16 md:py-24 bg-brand-dark-green text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-start">
+                <!-- Contact Info --><div>
+                    <h2 class="text-4xl md:text-5xl font-display leading-tight">
+                        Let's Talk Trees!
+                    </h2>
+                    <p class="mt-6 text-lg text-gray-200 leading-relaxed">
+                        Ready to enhance your landscape or have a tree concern? Reach out to Kaikalani today. We offer transparent communication, fair pricing, and a commitment to excellence. Licensed, bonded, and fully insured for your peace of mind.
+                    </p>
+                    <div class="mt-10 space-y-6">
+                        <div class="flex items-center gap-4">
+                            <svg class="h-8 w-8 text-brand-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span class="text-xl text-gray-100">(360) 555-1234</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <svg class="h-8 w-8 text-brand-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span class="text-xl text-gray-100">info@shakatreecare.com</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <svg class="h-8 w-8 text-brand-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span class="text-xl text-gray-100">Serving Bellingham, WA & Whatcom County</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form --><form action="#" method="POST" class="bg-white p-10 rounded-xl shadow-2xl">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-8">Your Trees are Waiting!</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" name="name" id="name" required
+                                   class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-green focus:border-brand-green sm:text-base text-gray-900 placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email" required
+                                   class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-green focus:border-brand-green sm:text-base text-gray-900 placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone (Optional)</label>
+                            <input type="tel" name="phone" id="phone"
+                                   class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-green focus:border-brand-green sm:text-base text-gray-900 placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Tell us about your tree needs!</label>
+                            <textarea id="message" name="message" rows="5" required
+                                      class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-green focus:border-brand-green sm:text-base text-gray-900 placeholder-gray-400"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                    class="w-full inline-flex justify-center py-4 px-6 border border-transparent shadow-lg text-lg font-bold rounded-full text-white bg-brand-green hover:bg-brand-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-green transition duration-300">
+                                Send My Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer --><footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-base text-gray-400">
+                &copy; 2025 Shaka Tree Care. All rights reserved. <span class="text-brand-gold">Licensed, Bonded & Insured.</span>
+            </p>
+            <p class="mt-2 text-sm text-gray-500">
+                Proudly serving Bellingham, WA and surrounding areas with "aloha."
+            </p>
+        </div>
+    </footer>
+
+    <!-- Simple animation for the logo in hero (optional, but adds a little flavor) --><style>
+        @keyframes pulse-slow {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.03);
+            }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 6s infinite ease-in-out;
+        }
+    </style>
+
+</body>
+</html>
